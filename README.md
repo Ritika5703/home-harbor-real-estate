@@ -12,6 +12,7 @@ It is designed for ease of use with a clean, responsive interface that works on 
 - View detailed property information
 - Contact property sellers
 - Responsive and user-friendly design
+- Admin panel to manage About Us section, add/view properties, manage users (user/agent/builder), view queries and feedback, add states, cities, etc.
 
 ---
 
@@ -178,16 +179,11 @@ config.php
 
 ### 6) Add your first admin/user safely
 
-- Go to `user` table → **Insert**.
-- Hash your password using:
+- Just go to your website’s Register page and create an account.
 
-```php
-<?php echo password_hash('YourPassword123', PASSWORD_DEFAULT);
-```
+- During registration, select the desired role — User, Agent, or Builder.
 
-- Use that hash in `upass`.
-
----
+- Then log in with the same credentials.
 
 ### 7) Seed basic data (optional)
 
